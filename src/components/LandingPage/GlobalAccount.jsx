@@ -10,7 +10,7 @@ import 'swiper/css/scrollbar';
 export default function GlobalAccount() {
     return (
         <>
-        <div className="bg-black overflow-hidden mt-5  h-fit text-white ">
+        <div className="bg-black overflow-hidden mt-8  h-fit text-white ">
         <div className="w-[90%] mx-auto md:py-16 py-10">
         <div className="flex gap-6 justify-between md:flex-row flex-col items-center">
         <div className=" w-[90%]">
@@ -102,7 +102,7 @@ export default function GlobalAccount() {
            <h4 className='font-semibold text-3xl text-gray-600'>Create an account</h4>
 <p className='text-gray-900 text-sm'>Sign up with your legal names, set up a strong password, and confirm email verification code.</p>
 </div>
-<img src='/img/verify.png' className='md:w-[20%] w-[40%]'/>
+<img src='/img/verify.png' className='md:w-[20%] w-[55%]'/>
 
           </div>
         </SwiperSlide>
@@ -115,7 +115,7 @@ export default function GlobalAccount() {
 <p className='text-gray-900 text-sm'>Complete details such as your profile, bank, employment, and identity verification.</p>
 </div>
 
-<img src='/img/verify2.png' className='md:w-[30%] w-[40%]'/>
+<img src='/img/verify2.png' className='md:w-[30%] w-[95%]'/>
 
           </div>
         </SwiperSlide>
@@ -151,7 +151,7 @@ export default function GlobalAccount() {
             Get started--it&apos;s free  <MoveUpRight className='size-4'/>
           </NavLink> 
 </div>
-<img  data-aos="fade-left" src="/img/keychain.jpg" className="md:w-[50%] md:h-[400px] h-[250px] rounded-3xl" />
+<img  data-aos="fade-left" src="/img/keychain.jpg" className="md:w-[50%] md:h-[400px] h-[220px] rounded-3xl" />
 </div>
 
 
