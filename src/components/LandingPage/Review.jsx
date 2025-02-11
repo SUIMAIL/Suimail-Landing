@@ -51,7 +51,7 @@ export default function Review() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-yellow-100 ruonded-lg gap-3 md:gap-12 md:flex-row flex-col px-6 md:px-12 py-6 mb-10 flex items-center justify-center">
+          <div className="bg-yellow-100 rounded-lg gap-3 md:gap-12 md:flex-row flex-col px-6 md:px-12 py-6 mb-10 flex items-center justify-center">
           <img src='/img/img.png' className='md:w-[30%] w-[40%]'/>
 <div className='flex flex-col gap-1'>
     <p className='text-sm '>Key-Chain offers a secure and user-friendly way to manage your finances. The platform&apos;s live price tracking and seamless swap features redefine asset management.</p>

@@ -120,7 +120,7 @@ export default function GlobalAccount() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-blue-100 ruonded-lg gap-3 md:gap-12 md:flex-row flex-col px-6 md:px-12 py-6 mb-10 flex items-center justify-center">
+          <div className="bg-blue-100 rounded-lg gap-3 md:gap-12 md:flex-row flex-col px-6 md:px-12 py-6 mb-10 flex items-center justify-center">
           
 <div className='flex flex-col gap-3'>
 <House className="text-blue-600 size-12" />
