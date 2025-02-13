@@ -52,8 +52,8 @@ export default function CryptoLiveChart() {
   return (
     <div className="w-full max-w-4xl mx-auto mt-6  p-4  flex flex-col gap-3 md:gap-3">
 <div data-aos="zoom-in">
-<h2 className="text-sm text-yellow-500 uppercase text-center font-semibold">Swap & Stay Ahead</h2>
-      <h1 className="font-semibold md:leading-[56px] text-3xl leading-[45px]  mx-auto  md:text-5xl text-center">Real-time crypto market,<br></br><span className="text-yellow-500">updates.</span> </h1>
+<h2 className="text-sm text-[#FAD129] uppercase text-center font-semibold">Swap & Stay Ahead</h2>
+      <h1 className="font-semibold md:leading-[56px] text-3xl leading-[45px]  mx-auto  md:text-5xl text-center">Real-time crypto market,<br></br><span className="text-[#FAD129]">updates.</span> </h1>
    
 </div>
    <table data-aos="fade-up" className="w-full mt-6 mx-auto">
