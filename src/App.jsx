@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/LandingPage/NavBar';
 import HomePage from './pages/HomePage';
+import signup from './pages/signup.jsx'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import  { useEffect } from 'react';
@@ -26,7 +27,7 @@ const App = () => {
         <Route path="/about" element={<div>About Page</div>} />
         <Route path="/help" element={<div>Help Page</div>} />
         <Route path="/login" element={<div>Login Page</div>} />
-        <Route path="/signup" element={<div>Signup Page</div>} />
+        <Route path="/signup" element={<div>Signup</div>} />
         <Route path="/contact" element={<div>contact us</div>} />
      
       </Routes>
