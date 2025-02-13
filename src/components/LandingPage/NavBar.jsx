@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { ChevronDown,ChevronUp, Globe, CircleUserRound,CircleDollarSign,WalletCards,HandCoins  } from 'lucide-react';
+import { ChevronDown,ChevronUp, Globe  } from 'lucide-react'; //CircleUserRound,CircleDollarSign,WalletCards,HandCoins
 const NavBar = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('EN');
@@ -17,6 +17,7 @@ const NavBar = () => {
 const handleLanguageChange = (code) => {
   setSelectedLanguage(code);
   setIsOpen(false);
+  setSidebarOpen(false);
 };
   
   const activeLinkStyle = "text-[#FAD129]      ";
@@ -54,7 +55,8 @@ const handleLanguageChange = (code) => {
                 <div className="absolute top-full left-[-75%]  md:left-0 mt-2  text-gray-900 bg-white p-4 border rounded-md w-[250px] md:w-[300px] z-10">
                     {languages.map(language => (
                         <div
-                            key={language.code}
+                            key={language.code} 
+                            
                             onClick={() => handleLanguageChange(language.code)}
                             className='cursor-pointer px-4 py-2 hover:bg-gray-200'
                         >
@@ -68,16 +70,16 @@ const handleLanguageChange = (code) => {
 
         {/* Center Section - Links */}
         <div className="hidden md:flex space-x-6 items-center">
-          <NavLink
+      {/*}    <NavLink
             to="/"
             className={({ isActive }) =>
               `hover:text-yellow-500 ${isActive ? activeLinkStyle : ""}`
             }
           >
             Home
-          </NavLink>
+          </NavLink> */}
 
-          <div className="relative group">
+       {/*}   <div className="  relative group">
             <NavLink
               to="/products"
               className={({ isActive }) =>
@@ -92,7 +94,7 @@ const handleLanguageChange = (code) => {
               <NavLink to="/products/product3" className="block py-2 px-4 hover:text-gray-600" onClick={closeSidebar}> <span className='flex items-center gap-2'><WalletCards /> Visual Cards</span> <p className='text-xs text-gray-400'>Secure Digital Payment Solucion</p></NavLink>
               <NavLink to="/products/product4" className="block  px-4 hover:text-gray-600" onClick={closeSidebar}> <span className='flex items-center gap-2'><HandCoins />Money Transfer</span> <p className='text-xs text-gray-400'>Global Funds transfer</p></NavLink>
             </div>
-          </div>
+          </div> */}
 
           <NavLink
             to="/about"
@@ -100,7 +102,7 @@ const handleLanguageChange = (code) => {
               `hover:text-yellow-500 ${isActive ? activeLinkStyle : ""}`
             }
           >
-            About us
+            About
           </NavLink>
 
           <NavLink
@@ -114,17 +116,17 @@ const handleLanguageChange = (code) => {
 
 
           <NavLink
-            to="/help"
+            to="/faq"
             className={({ isActive }) =>
               `hover:text-yellow-500 ${isActive ? activeLinkStyle : ""}`
             }
           >
-            Help Center
+          FAQ
           </NavLink>
         </div>
 
         {/* Right Section - Login and Signup */}
-        <div className="hidden md:flex space-x-12">
+        <div className="hidden md:flex space-x-6 items-center">
           <NavLink
             to="/login"
             className='border px-4 py-2 rounded-lg hover:border-[#FAD129] hover:text-[#FAD129]'
@@ -164,12 +166,17 @@ const handleLanguageChange = (code) => {
           </button>
          </div>
         <div className='flex  items-center'>
+        <NavLink
+            to="/"
+            onClick={closeSidebar}
+           
+          >
         <img src='/img/logo.png' className='md:w-44 w-44' alt="Logo" />
          
-      
+        </NavLink>
         </div>
         <div className="p-4 space-y-4">
-          <NavLink
+       {/*}   <NavLink
             to="/"
             onClick={closeSidebar}
             className={({ isActive }) =>
@@ -177,9 +184,9 @@ const handleLanguageChange = (code) => {
             }
           >
             Home
-          </NavLink>
+          </NavLink> */}
 
-          <div className="relative group">
+       {/*}   <div className="relative group">
             <NavLink
               to="/products"
               className={({ isActive }) =>
@@ -194,7 +201,7 @@ const handleLanguageChange = (code) => {
               <NavLink to="/products/product3" className="block py-2 px-4 hover:text-gray-300" onClick={closeSidebar}> <span className='flex items-center gap-2'><WalletCards /> Visual Cards</span> <p className='text-xs text-gray-200'>Secure Digital Payment Solucion</p></NavLink>
               <NavLink to="/products/product4" className="block  px-4 hover:text-gray-300" onClick={closeSidebar}> <span className='flex items-center gap-2'><HandCoins />Money Transfer</span> <p className='text-xs text-gray-200'>Global Funds transfer</p></NavLink>
             </div>
-          </div>
+          </div> */}
 
           <NavLink
             to="/about"
@@ -218,13 +225,13 @@ const handleLanguageChange = (code) => {
 
 
           <NavLink
-            to="/help"
+            to="/faq"
             onClick={closeSidebar}
             className={({ isActive }) =>
               `block py-2 hover:text-yellow-500 ${isActive ? activeLinkStyle : ""}`
             }
           >
-            Help Center
+            FAQ
           </NavLink>
 
           <div className="flex space-y-4 pt-4 flex-col">

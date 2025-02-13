@@ -34,40 +34,40 @@ export default function GlobalAccount() {
 <div className="grid grid-cols-1 mt-5 md:grid-cols-3 gap-6">
 <div data-aos="fade-right" className="flex flex-col    bg-gray-900 p-6 rounded-lg">
 <CreditCard className="size-16 pb-5" />
-    <h6 className="flex items-center text-yellow-500 mb-3 gap-1 font-bold">01  <Minus /></h6>
+    <h6 className="flex items-center text-[#FAD129] mb-3 gap-1 font-bold">01  <Minus /></h6>
     <h3 className="font-semibold py-2 text-2xl">Zero Account & Card Maintenance Fees. </h3>
 <p className="text-sm">Enjoy financial freedom without hidden charges.</p>
 </div>
 
 <div data-aos="fade-up"  className="flex flex-col    bg-gray-900 p-6 rounded-lg">
 <Bitcoin className="size-16 pb-5"/>
-    <h6 className="flex items-center text-yellow-500 gap-1 font-bold">02  <Minus /></h6>
-    <h3 className="font-semibold py-2 text-2xl">Instant Currency Conversion. </h3>
+    <h6 className="flex items-center text-[#FAD129] gap-1 font-bold">02  <Minus /></h6>
+    <h3 className="font-semibold py-2 text-2xl">Instant Crypto currency conversion. </h3>
     <p className="text-sm">Swap currencies seamlessly at competitive rates.</p>
 </div>
 <div data-aos="zoom-in" className="flex flex-col    bg-gray-900 p-6 rounded-lg">
 <ChartCandlestick className="size-16 pb-5"/>
-    <h6 className="flex items-center text-yellow-500 gap-1 font-bold">03  <Minus /></h6>
+    <h6 className="flex items-center text-[#FAD129] gap-1 font-bold">03  <Minus /></h6>
     <h3 className="font-semibold py-2 text-2xl">Real-Time Crypto Market Updates. </h3>
     <p className="text-sm">Stay ahead with up-to-the-minute price insights.</p>
 </div>
 <div data-aos="fade-right"  className="flex flex-col    bg-gray-900 p-6 rounded-lg">
 <ScanLine className="size-16 pb-5"/>
-    <h6 className="flex items-center text-yellow-500 gap-1 font-bold">04  <Minus /></h6>
+    <h6 className="flex items-center text-[#FAD129] gap-1 font-bold">04  <Minus /></h6>
     <h3 className="font-semibold py-2 text-2xl">Fast & Secure Transactions. </h3>
     <p className="text-sm">Experience safe and speedy financial operations.</p>
 </div>
 
 <div data-aos="zoom-in"  className="flex flex-col    bg-gray-900 p-6 rounded-lg">
 <HandCoins className="size-16 pb-5"/>
-    <h6 className="flex items-center text-yellow-500 gap-1 font-bold">05  <Minus /></h6>
+    <h6 className="flex items-center text-[#FAD129] gap-1 font-bold">05  <Minus /></h6>
     <h3 className="font-semibold py-2 text-2xl">Flexible Payment Options. </h3>
     <p className="text-sm"> Manage multiple payment methods effortlessly.</p>
 </div>
 
 <div data-aos="fade-left"  className="flex flex-col    bg-gray-900 p-6 rounded-lg">
 <PenOff  className="size-16 pb-5"/>
-    <h6 className="flex text-yellow-500 items-center gap-1 font-bold">06  <Minus /></h6>
+    <h6 className="flex text-[#FAD129] items-center gap-1 font-bold">06  <Minus /></h6>
     <h3 className="font-semibold py-2 text-2xl">No Border Restrictions. </h3>
     <p className="text-sm"> Access your funds globally without limitations.</p>
 </div>
@@ -77,7 +77,7 @@ export default function GlobalAccount() {
 
         </div>
         <div className="md:mt-20 text-gray-900 md:w-[70%] mx-auto mt-10 w-[90%]">
-        <h2 className="text-sm text-yellow-500 uppercase text-center font-semibold">HOW IT WORKS</h2>
+        <h2 className="text-sm text-[#FAD129] uppercase text-center font-semibold">HOW IT WORKS</h2>
         <h3 className="font-semibold text-white md:leading-[56px] text-3xl leading-[45px]  mx-auto  md:text-5xl text-center capitalize">3 simple steps to set up your Key-Chain account.</h3>
 
       <Swiper

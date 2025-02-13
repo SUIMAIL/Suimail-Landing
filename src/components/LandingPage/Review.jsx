@@ -9,7 +9,7 @@ import 'swiper/css/scrollbar';
 export default function Review() {
   return (
     <div className="md:mt-20 md:w-[70%] mx-auto mt-10 w-[90%]">
-        <h2 className="text-sm text-yellow-500 uppercase text-center font-semibold">Customers Review</h2>
+        <h2 className="text-sm text-[#FAD129] uppercase text-center font-semibold">Customers Review</h2>
 <h3 className="font-semibold md:leading-[56px] text-3xl leading-[45px]  mx-auto  md:text-5xl text-center capitalize">What our users says about Key-Chain.</h3>
 
       <Swiper

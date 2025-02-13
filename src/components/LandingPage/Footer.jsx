@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="flex flex-col gap-2">
           <h2 className="text-lg font-bold">CONTACT US</h2>
           <div className="text-sm flex flex-col gap-3">
-            <Link to=''>key-chain@gmail.com</Link>
+            <Link to=''>key-chain.xyz@gmail.com</Link>
             <span className="flex items-center gap-3">
               <Link to='' className="border-2 hover:border-yellow-500 hover:text-yellow-500 border-gray-500 p-1 rounded-xl"><Instagram /></Link>
               <Link to='' className="border-2 hover:border-yellow-500 hover:text-yellow-500 border-gray-500 p-1 rounded-xl"><Youtube /></Link>

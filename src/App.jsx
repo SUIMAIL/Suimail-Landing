@@ -2,6 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/LandingPage/NavBar';
 import HomePage from './pages/HomePage';
 import signup from './pages/signup.jsx'
+import AboutPage from './pages/AboutUs';
+import Contact from './pages/Contact';
+import Faq from './pages/Faq';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import  { useEffect } from 'react';
@@ -24,11 +27,13 @@ const App = () => {
         <Route path="/product/virtual-card" element={<div>Product 2 Page</div>} />
         <Route path="/product/currency-exchange" element={<div>Product 3 Page</div>} />
         <Route path="/product/foreign-account" element={<div>Product 4 Page</div>} />
-        <Route path="/about" element={<div>About Page</div>} />
-        <Route path="/help" element={<div>Help Page</div>} />
+        <Route path="/about" element={<AboutPage/>} />
+        <Route path="/faq" element={<Faq/>} />
         <Route path="/login" element={<div>Login Page</div>} />
         <Route path="/signup" element={<div>Signup</div>} />
         <Route path="/contact" element={<div>contact us</div>} />
+        <Route path="/signup" element={<div>Signup Page</div>} />
+        <Route path="/contact" element={<Contact/>} />
      
       </Routes>
     </BrowserRouter>
