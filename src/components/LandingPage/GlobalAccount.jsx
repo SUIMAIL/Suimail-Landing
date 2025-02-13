@@ -42,7 +42,7 @@ export default function GlobalAccount() {
 <div data-aos="fade-up"  className="flex flex-col    bg-gray-900 p-6 rounded-lg">
 <Bitcoin className="size-16 pb-5"/>
     <h6 className="flex items-center text-yellow-500 gap-1 font-bold">02  <Minus /></h6>
-    <h3 className="font-semibold py-2 text-2xl">Instant Currency Conversion. </h3>
+    <h3 className="font-semibold py-2 text-2xl">Instant Crypto currency conversion. </h3>
     <p className="text-sm">Swap currencies seamlessly at competitive rates.</p>
 </div>
 <div data-aos="zoom-in" className="flex flex-col    bg-gray-900 p-6 rounded-lg">
