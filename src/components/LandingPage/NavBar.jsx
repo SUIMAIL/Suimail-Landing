@@ -17,6 +17,7 @@ const NavBar = () => {
 const handleLanguageChange = (code) => {
   setSelectedLanguage(code);
   setIsOpen(false);
+  setSidebarOpen(false);
 };
   
   const activeLinkStyle = "text-[#FAD129]      ";
@@ -54,7 +55,8 @@ const handleLanguageChange = (code) => {
                 <div className="absolute top-full left-[-75%]  md:left-0 mt-2  text-gray-900 bg-white p-4 border rounded-md w-[250px] md:w-[300px] z-10">
                     {languages.map(language => (
                         <div
-                            key={language.code}
+                            key={language.code} 
+                            
                             onClick={() => handleLanguageChange(language.code)}
                             className='cursor-pointer px-4 py-2 hover:bg-gray-200'
                         >
