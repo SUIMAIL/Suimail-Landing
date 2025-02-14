@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutUs';
 import Contact from './pages/Contact';
 import Faq from './pages/Faq';
+import signup from './pages/signup.jsx'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import  { useEffect } from 'react';
@@ -31,6 +32,8 @@ const App = () => {
         <Route path="/login" element={<div>Login Page</div>} />
         <Route path="/signup" element={<div>Signup Page</div>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/signup" element={<div>Signup</div>} />
+        <Route path="/contact" element={<div>contact us</div>} />
      
       </Routes>
     </BrowserRouter>
