@@ -12,7 +12,7 @@ function SideBar() {
     <div className="flex h-screen">
       {/* Sidebar */}
       <aside
-        className={`fixed inset-y-0 left-0 pt-12 top-[14.8%] md:top-[13%] lg:top-[17%] z-30 w-64 bg-nav text-white shadow-md transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-y-0 left-0 pt-12 top-[14.8%] md:top-[13%] lg:top-[17%] z-50 w-64 bg-nav text-white shadow-md transition-transform duration-300 ease-in-out ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0 md:block`}
       >
@@ -64,7 +64,7 @@ function SideBar() {
       {/* Open Sidebar Button */}
      <div className="md:hidden pt-[100px]">
      <button
-        className="fixed flex flex-col justify-between items-cente px-5 z-30 bg-white  w-full  z- md:hidden py-2 shadow-2xl text-gray-900   "
+        className="fixed flex flex-col justify-between items-cente px-5   bg-white  w-full  z- md:hidden py-2 shadow-2xl text-gray-900   "
         onClick={openSidebar} >
 <span className="flex items-center justify-between w-full"><Menu size={32} />
 <span className="flex items-center gap-4 justify-end">

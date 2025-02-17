@@ -20,8 +20,8 @@ export function LoginPage() {
   }
 
   return (
-    <div className="pt-52 flex w-[80%] mx-auto gap-8">
-      <img src="/img/sign1.jpg" className="object-cover md:block hidden w-[50%] h-[300px]" />
+    <div className="pt-40 pb-20 flex w-[80%] mx-auto gap-8">
+      <img src="/img/sign1.jpg" className="object-cover md:block hidden w-[50%] h-[400px]" />
 
       <form className="flex w-[100%] flex-col gap-4 mx-auto">
         <h3 className="text-2xl font-semibold">Login to your Key-Chain Account</h3>

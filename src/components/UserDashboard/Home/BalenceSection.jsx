@@ -30,8 +30,8 @@ export default function BalanceSection() {
   }
 
   return (
-    <div className="bg-white  w-[95%] mx-auto overflow-hidden  shadow-lg  rounded-xl px-4 py-2 md:px-6 ">
-      <div className="flex items-center justify- mb-4">
+    <div className="bg-white  w-[95%] mx-auto overflow-hidde  shadow-lg  rounded-xl px-4 py-2 md:px-6 ">
+      <div className="flex items-center  mb-4">
         <h2 className="text-lg font-semibold">Total Assets</h2>
         <button onClick={toggleVisibility} className="p-2 rounded-full transition">
           {isHidden ? <EyeOff size={24} /> : <Eye size={24} />}
@@ -39,8 +39,8 @@ export default function BalanceSection() {
       </div>
 
       {/* Horizontal Scrollable List */}
-      <div className="overflow-x-scroll " style={scrollbarHideStyle}>
-        <div className="flex space-x-4 pb-4 overflow-x-hidde [calc(100%+1rem)]">
+      <div className="overflow-x-scroll  " style={scrollbarHideStyle}>
+        <div className="flex space-x-4 pb-4 ">
           {assets.map((asset, index) => (
             <NavLink to={asset.href}
               key={index}
