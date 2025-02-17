@@ -20,7 +20,7 @@ const handleLanguageChange = (code) => {
   setSidebarOpen(false);
 };
   
-  const activeLinkStyle = "text-[#FAD129]      ";
+  const activeLinkStyle = "text-[#FAD129] ";
 
   const languages = [
     { code: 'EN', name: 'English' },
@@ -45,7 +45,7 @@ const handleLanguageChange = (code) => {
        <NavLink to="/" className="text-2xl font-bold">
           <img src='/img/logo.png' className='md:w-44 w-44' alt="Logo" />
         </NavLink>
-        <div className='relative'>
+        <div className='relative z-30'>
             <div className='flex text-gray-900 items-center border rounded-full py-2 px-3 cursor-pointer' onClick={toggleDropdown}>
                 <label htmlFor="language-selector"><Globe className='text-blue-100' /></label>
                 <span className="ml-2 text-white">{selectedLanguage}</span>
@@ -70,16 +70,16 @@ const handleLanguageChange = (code) => {
 
         {/* Center Section - Links */}
         <div className="hidden md:flex space-x-6 items-center">
-      {/*}    <NavLink
-            to="/"
+      {/*   <NavLink
+            to="/dashboard/overview"
             className={({ isActive }) =>
               `hover:text-yellow-500 ${isActive ? activeLinkStyle : ""}`
             }
           >
             Home
-          </NavLink> */}
+          </NavLink> 
 
-       {/*}   <div className="  relative group">
+       }   <div className="  relative group">
             <NavLink
               to="/products"
               className={({ isActive }) =>
