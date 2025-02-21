@@ -20,7 +20,7 @@ const handleLanguageChange = (code) => {
   setSidebarOpen(false);
 };
   
-  const activeLinkStyle = "text-[#FAD129]      ";
+  const activeLinkStyle = "text-[#FAD129] ";
 
   const languages = [
     { code: 'EN', name: 'English' },
@@ -45,14 +45,14 @@ const handleLanguageChange = (code) => {
        <NavLink to="/" className="text-2xl font-bold">
           <img src='/img/logo.png' className='md:w-44 w-44' alt="Logo" />
         </NavLink>
-        <div className='relative'>
+        <div className='relative '>
             <div className='flex text-gray-900 items-center border rounded-full py-2 px-3 cursor-pointer' onClick={toggleDropdown}>
                 <label htmlFor="language-selector"><Globe className='text-blue-100' /></label>
                 <span className="ml-2 text-white">{selectedLanguage}</span>
                 {isOpen ? <ChevronUp className='ml-2 size-5 text-white' /> : <ChevronDown className='ml-2 size-5 text-white' />}
             </div>
             {isOpen && (
-                <div className="absolute top-full left-[-75%]  md:left-0 mt-2  text-gray-900 bg-white p-4 border rounded-md w-[250px] md:w-[300px] z-10">
+                <div className="absolute top-full left-[-75%]   md:left-0 mt-2  text-gray-900 bg-white p-4 border rounded-md w-[250px] md:w-[300px]">
                     {languages.map(language => (
                         <div
                             key={language.code} 
@@ -70,16 +70,16 @@ const handleLanguageChange = (code) => {
 
         {/* Center Section - Links */}
         <div className="hidden md:flex space-x-6 items-center">
-      {/*}    <NavLink
-            to="/"
+      {/*   <NavLink
+            to="/dashboard/overview"
             className={({ isActive }) =>
               `hover:text-yellow-500 ${isActive ? activeLinkStyle : ""}`
             }
           >
             Home
-          </NavLink> */}
+          </NavLink> 
 
-       {/*}   <div className="  relative group">
+       }   <div className="  relative group">
             <NavLink
               to="/products"
               className={({ isActive }) =>

@@ -29,3 +29,9 @@
     background: #fff; /* Customize the hover color */
     color: #000;
   }
+
+
+  input, TextInput{
+    outline: none;
+    
+  }

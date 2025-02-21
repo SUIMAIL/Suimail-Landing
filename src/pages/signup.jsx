@@ -1,3 +1,4 @@
+
 import React from "react";import { Carousel } from "react-responsive-carousel";
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -67,3 +68,13 @@ const Signup = () => {
 };
 
 export default Signup;
+import Signup from "../components/CreateAccount/signup"
+import Footer from "../components/LandingPage/Footer"
+export default function SignupPage(){
+    return(
+        <div>
+<Signup/>
+<Footer/>
+        </div>
+    )
+}
