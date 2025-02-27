@@ -22,7 +22,8 @@ import Polygon from './components/UserDashboard/Account/Poly';
 import Abitrium from './components/UserDashboard/Account/Arb';
 import Login from './pages/Login';
 import PaymentTable from './components/UserDashboard/Payment';
-
+import VirtualCard from './components/UserDashboard/VirtualCard'
+import ReportsAndStatements from './components/UserDashboard/Report.jsx'
 
 
 
@@ -66,6 +67,8 @@ const App = () => {
   <Route index element={<Navigate replace to="overview" />} />
   <Route path="overview" element={<Dashboard />} />
   <Route path="payment" element={<PaymentTable />} />
+  <Route path="Cards" element={<VirtualCard/>} />
+  <Route path="report" element={<ReportsAndStatements/>} />
   
   {/* ACCOUNT ROUTES */}
   <Route path="users" element={<AccountLayout />}>
