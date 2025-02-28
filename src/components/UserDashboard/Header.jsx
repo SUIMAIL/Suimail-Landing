@@ -2,7 +2,7 @@ import { ArrowLeftRight,Settings } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 export default function DashboardHeader(){
     return(
-        <div className=" mx-auto fixed  z-30 w-full md:w-[81%]  ">
+        <div className=" mx-auto fixed  z-50 w-full md:w-[81%]  ">
             <div className="mt-20  bg-white hidden   md:px-12 py-8  md:flex md:flex-row flex-col md:justify-between shadow-2xl">
 <div className=''> 
 <h2 className='md:text-3xl text-lg  font-bold'>Welcome Back Izuchukwu, 👋🏼</h2>

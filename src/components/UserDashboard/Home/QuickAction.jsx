@@ -4,7 +4,7 @@
 //import { Eye, EyeOff } from "lucide-react"
 
 const assets = [
-  { name: "Send Crypto", img: "/img/send.png", currency: " Send Crypto to 80+ countries instanly" },
+  { name: "Send Crypto & Fiat Currency", img: "/img/send.png", currency: " Send Crypto to 80+ countries instanly" },
 
   { name: "Virtual Card", img: "/img/card.jpg",  currency: "Shop, subscribe and pay bills securely online" },
   { name: "Pay Bills", img: "/img/bill.png", currency: "Pay for your internet, cabel subscription and other utility bills all in one place" },

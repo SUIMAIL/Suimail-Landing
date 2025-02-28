@@ -2,9 +2,9 @@
 
 import { useState } from "react"
 import { Eye, EyeOff } from "lucide-react"
-import { NavLink } from "react-router-dom"
+//import { NavLink } from "react-router-dom"
 
-const assets = [
+{/*const assets = [
   { name: "AVAX", img: "/img/avax.png", amount: 567, currency: "$", href:'/dashboard/users/account' },
   { name: "ETH", img: "/img/eth.png", amount: 890, currency: "$", href:'/dashboard/users/eth' },
   { name: "TON", img: "/img/ton.png", amount: 12345, currency: "$", href:'/dashboard/users/ton' },
@@ -12,7 +12,7 @@ const assets = [
   { name: "BASE", img: "/img/base.png", amount: 890, currency: "$",href:'/dashboard/users/base' },
   { name: "ARBITRUM", img: "/img/ab.png", amount: 12345, currency: "$", href:'/dashboard/users/ab' },
   { name: "NIG", img: "/img/nig.png", amount: 890, currency: "₦", href:'/dashboard/users/nig' },
-]
+] */}
 
 export default function BalanceSection() {
   const [isHidden, setIsHidden] = useState(false)
@@ -21,24 +21,25 @@ export default function BalanceSection() {
     setIsHidden((prev) => !prev)
   }
 
-  const scrollbarHideStyle = {
+  {/*const scrollbarHideStyle = {
     msOverflowStyle: "none",
     scrollbarWidth: "none",
     "&::-webkit-scrollbar": {
       display: "none",
     },
-  }
+  }*/}
 
   return (
-    <div className="bg-white  w-[95%] mx-auto overflow-hidde  shadow-lg  rounded-xl px-4 py-2 md:px-6 ">
+    <div className="bg-white w-[90%] mx-auto md:mx-0 md:ml-6 md:w-[40%]   shadow-lg  rounded-xl py-4 px-8 md:py-2 md:px-6 ">
       <div className="flex items-center  mb-4">
         <h2 className="text-lg font-semibold">Total Assets</h2>
         <button onClick={toggleVisibility} className="p-2 rounded-full transition">
           {isHidden ? <EyeOff size={24} /> : <Eye size={24} />}
         </button>
       </div>
+      <h2 className="font-bold text-3xl">$3900</h2>
 
-      {/* Horizontal Scrollable List */}
+      {/* Horizontal Scrollable List 
       <div className="overflow-x-scroll  " style={scrollbarHideStyle}>
         <div className="flex space-x-4 pb-4 ">
           {assets.map((asset, index) => (
@@ -54,7 +55,9 @@ export default function BalanceSection() {
             </NavLink>
           ))}
         </div>
-      </div>
+      </div>*/}
+
+
     </div>
   )
 }

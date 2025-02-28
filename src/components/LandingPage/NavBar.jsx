@@ -38,7 +38,7 @@ const handleLanguageChange = (code) => {
 
 
   return (
-    <nav className="py-6 bg-nav z-50  fixed w-full  text-white shadow-2xl ">
+    <nav className="py-6 bg-nav md:z-50  fixed w-full  text-white shadow-2xl ">
       <div className="container flex w-[90%] mx-auto justify-between items-center">
         {/* Left Section - Logo */}
        <div className='flex gap-2 items-center'>
@@ -156,9 +156,9 @@ const handleLanguageChange = (code) => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-nav px-6 text-white transform ${
+        className={`fixed top-0 right-0 h-full  w-64 bg-nav px-6 text-white  transform ${
           isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
-        } transition-transform duration-300 z-50`}
+        } transition-transform duration-300 z-50 ease-in-out`}
       >
         <div className="p-4 flex justify-end items-end">
         <button className="text-white" onClick={closeSidebar}>

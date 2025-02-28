@@ -12,7 +12,7 @@ function SideBar() {
     <div className="flex h-screen">
       {/* Sidebar */}
       <aside
-        className={`fixed inset-y-0 left-0 pt-12 top-[14.8%] md:top-[13%] lg:top-[17%] z-50 w-64 bg-nav text-white shadow-md transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-y-0 left-0 pt-12  md:top-[8%]  md:pt-[8%] md:z-0 z-50 w-64 bg-nav text-white shadow-md transition-transform duration-300 ease-in-out ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0 md:block`}
       >
@@ -64,18 +64,18 @@ function SideBar() {
       {/* Open Sidebar Button */}
      <div className="md:hidden pt-[100px]">
      <button
-        className="fixed flex flex-col justify-between items-cente px-5   bg-white  w-full  z- md:hidden py-2 shadow-2xl text-gray-900   "
+        className="fixed flex flex-col justify-between items-cente px-5    bg-white  w-full  -z-0 md:hidden py-2 shadow-2xl text-gray-900   "
         onClick={openSidebar} >
 <span className="flex items-center justify-between w-full"><Menu size={32} />
 <span className="flex items-center gap-4 justify-end">
-<NavLink to='' ><img  src='/img/note.png' className="w-8"/></NavLink>
-<button className='px-2 py-1 text-2xl  bg-gray-100 rounded-full' ><img  src='/img/avatar.png' className="w-10"/></button>
+<NavLink to='' onClick={(e) => e.stopPropagation()} ><img  src='/img/note.png' className="w-8"/></NavLink>
+<button onClick={(e) => e.stopPropagation()} className='px-2 py-1 text-2xl  bg-gray-100 rounded-full' ><img  src='/img/avatar.png' className="w-10"/></button>
 </span>
 
 
  </span>
         
-        <div className='flex items-center gap-6'> 
+        <div onClick={(e) => e.stopPropagation()} className='flex items-center gap-6'> 
 <h2 className='md:text-3xl text-[22px]  font-bold'>Hello Izuchukwu, 👋🏼</h2>
 
 </div>
@@ -86,7 +86,7 @@ function SideBar() {
 
       {/* Close Sidebar Button */}
       <button
-        className="fixed top-28 left-48 text-white z-50 md:hidden p-2  rounded-full "
+        className="fixed top-8 left-48 text-white z-50 md:hidden p-2  rounded-full "
         onClick={closeSidebar}
         style={{ display: isSidebarOpen ? "block" : "none" }}
       >
