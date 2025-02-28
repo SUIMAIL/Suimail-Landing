@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 import BalenceSection from "./Home/BalenceSection"
 import QuickAction from "./Home/QuickAction"
-import MarketChart from "./Home/MarketChar"
+import MarketChart from "./Home/MarketChar" 
 import TransactionTable from "./Home/Table"
 function Dashboard() {
     return (

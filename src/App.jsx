@@ -1,6 +1,7 @@
 import { BrowserRouter,Navigate, Routes, Route } from 'react-router-dom';
 import NavBar from './components/LandingPage/NavBar';
 import HomePage from './pages/HomePage';
+//import signup from './pages/signup.jsx'
 import AboutPage from './pages/AboutUs';
 import Contact from './pages/Contact';
 import SignupPage from './pages/signup';
@@ -21,7 +22,8 @@ import Polygon from './components/UserDashboard/Account/Poly';
 import Abitrium from './components/UserDashboard/Account/Arb';
 import Login from './pages/Login';
 import PaymentTable from './components/UserDashboard/Payment';
-
+import VirtualCard from './components/UserDashboard/VirtualCard'
+import ReportsAndStatements from './components/UserDashboard/Report.jsx'
 
 
 
@@ -48,6 +50,9 @@ const App = () => {
         <Route path="/product/foreign-account" element={<div>Product 4 Page</div>} /> */}
         <Route path="/about" element={<AboutPage/>} />
         <Route path="/faq" element={<Faq/>} />
+       
+        <Route path="/contact" element={<Contact/>} />
+        
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<SignupPage/>} />
         <Route path="/contact" element={<Contact/>} />
@@ -61,6 +66,8 @@ const App = () => {
   <Route index element={<Navigate replace to="overview" />} />
   <Route path="overview" element={<Dashboard />} />
   <Route path="payment" element={<PaymentTable />} />
+  <Route path="Cards" element={<VirtualCard/>} />
+  <Route path="report" element={<ReportsAndStatements/>} />
   
   {/* ACCOUNT ROUTES */}
   <Route path="users" element={<AccountLayout />}>

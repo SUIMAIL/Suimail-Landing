@@ -40,7 +40,7 @@ function SideBar() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/dashboard/orders" className="flex items-center gap-2 p-2 rounded">
+              <NavLink to="/dashboard/Cards" className="flex items-center gap-2 p-2 rounded">
               <WalletCards />  Cards
               </NavLink>
             </li>

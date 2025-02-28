@@ -1,10 +1,9 @@
-import Signup from "../components/CreateAccount/signup"
-import Footer from "../components/LandingPage/Footer"
-export default function SignupPage(){
-    return(
-        <div>
-<Signup/>
-<Footer/>
-        </div>
-    )
+import SignUp from '../components/CreateAccount/SignUp';
+export default function SignUpPage() {
+return(
+    <div>
+        <SignUp />
+    </div>
+)
+
 }
