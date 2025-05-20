@@ -9,6 +9,12 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'space-grotesk': ['"Space Grotesk"', 'sans-serif'],
+        manrope: ['Manrope', 'sans-serif'],
+        satoshi: ['Satoshi', 'sans-serif'],
+        syne: ['Syne', 'sans-serif'],
+      },
       backgroundImage: {
         'nav': "linear-gradient(90deg, #5C6D98 0%, #8FA2C9 100%)",
       },
