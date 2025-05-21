@@ -12,11 +12,11 @@ import Prime from "../assets/Prime.png";
 import Joel from "../assets/Joel.png";
 import Evangel from "../assets/Evangel.png";
 import Dean from "../assets/Dean.jpg";
-import logo_text from "../assets/logo_text.png";
+import suimail_logo from "../assets/suimail-logo.png"
 import big from "../assets/4XL.png";
 
 const teamMembers = [
-  { name: "Abdullahi Salisu Muhammed", role: "Team Lead", image: Zid, twitter: "Z1d_exe" },
+  { name: "AbdulWahab Salisu ", role: "Team Lead", image: Zid, twitter: "Z1d_exe" },
   { name: "Oladipo Evangel", role: "Tech Lead", image: Evangel, twitter: "OladipoEvangel" },
   { name: "Abdullahi Wahab", role: "FrontEnd Dev", image: Abdol, twitter: "Abdol164" },
   { name: "Ukanah Dean", role: "BackEnd Dev", image: Dean, twitter: "OnesiUkanah" },
@@ -43,7 +43,7 @@ export default function TeamPage() {
       {/* Team Section */}
       <section className="bg-purple-700 py-16 text-white text-center">
         <h2 className="text-lg tracking-wide uppercase mb-2">Our Team</h2>
-        <h1 className="text-3xl font-bold mb-10">Meet Our Awesome Team</h1>
+        <h1 className="text-3xl font-bold mb-10">Meet The Team</h1>
         <div className="grid gap-6 px-4 sm:grid-cols-2 md:grid-cols-3 max-w-6xl mx-auto">
           {teamMembers.map((member, index) => (
             <motion.div
@@ -114,11 +114,8 @@ export default function TeamPage() {
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="max-w-6xl mx-auto p-8 flex flex-col md:flex-row justify-between items-center">
-          <img
-            src={logo_text}
-            alt="Suimail Logo"
-            className="w-70 h-10 font-bold text-blue-500"
-          />
+                    <img src={suimail_logo || "/placeholder.svg"} alt="Logo" className="mx-auto md:mx-0 h-12 md:h-16" />
+
           <div className="flex flex-col md:flex-row gap-4 text-sm text-gray-600 mt-4 md:mt-0">
             <div>
               <h3 className="font-semibold mb-1">Getting Started</h3>

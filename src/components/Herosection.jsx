@@ -380,16 +380,13 @@ const HeroSection = () => {
             variants={fadeInUpVariants}
             className="mt-4 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-900 font-coolvetica leading-tight"
           >
-            The First Truly Secure Email
+            Own Your Inbox. <br/>Monetize Your Attention
             <br />
-            Powered by{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Sui </span>
-            Blockchain
+           
           </motion.h1>
 
           <motion.p variants={fadeInUpVariants} className="mt-4 text-gray-600 font-karla max-w-lg mx-auto md:mx-0">
-            End-to-end encrypted, decentralized storage, and zero tracking. Take back control of your communications
-            with blockchain security.
+             Decentralized Mailing that empowers you to take control of your inbox.<br/>No more spam. No more bots.
           </motion.p>
 
           {/* Web3 Feature Pills - Enhanced */}
