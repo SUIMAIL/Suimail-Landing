@@ -1,17 +1,11 @@
-import React from "react";
-import { motion } from "framer-motion";
-import Data_Sovergn from "../assets/Data_Sovergn.png";
-import Encryption from "../assets/Encryption.png";
-import end2end from "../assets/end2end.png";
-import Data_Sovern from "../assets/Data_Sovern.png";
-import tiny_logo from "../assets/tiny_logo.png";
+import { motion } from "framer-motion"
 
 const icons = [
   {
-    title: "Encryption Built on Sui Blockchain",
+    title: "Built on Sui Blockchain",
     description:
       "Suimail leverages the Sui blockchain to provide a fully decentralized email platform with advanced encryption layers, ensuring secure communications.",
-    imageSrc: Encryption,
+    imageSrc: "/images/Encryption.png",
     icon: "Encryption",
     bg: "bg-white text-gray-900",
     reverse: false,
@@ -20,16 +14,16 @@ const icons = [
     title: "Self-Sovereign Identity (SSI)",
     description:
       "Empowering users with complete control over their identities, data and inboxes. Suimail eliminates the need for central authorities, ensuring privacy and autonomy.",
-    imageSrc: Data_Sovern,
+    imageSrc: "/images/Data_sovern.png",
     icon: "user",
     bg: "bg-blue-600 text-white",
     reverse: true,
   },
   {
     title: "Token Gated Inboxes",
-    description: `Your inbox, your price. With SuiMail’s Token-Gated Inboxes, you decide what it costs to reach you.
+    description: `Your inbox, your price. With SuiMail's Token-Gated Inboxes, you decide what it costs to reach you.
 Set a fee only high-intent messages make it through. No more spam, just value.`,
-    imageSrc: end2end,
+    imageSrc: "/images/end2end.png",
     icon: "paper-plane",
     bg: "bg-white text-gray-900",
     reverse: false,
@@ -38,12 +32,12 @@ Set a fee only high-intent messages make it through. No more spam, just value.`,
     title: "Data Sovereignty",
     description:
       "You own it. You control it. With SuiMail, your messages live on-chain and under your control, not on centralized servers. No surveillance, no exploitation. Just pure, private communication owned by you.",
-    imageSrc: Data_Sovergn,
+    imageSrc: "/images/Data_Sovergn.png",
     icon: "database",
     bg: "bg-blue-600 text-white",
     reverse: true,
   },
-];
+]
 
 const FeaturesSection = () => {
   const imageVariants = {
@@ -53,7 +47,7 @@ const FeaturesSection = () => {
       x: 0,
       transition: { duration: 0.8, ease: "easeOut" },
     },
-  };
+  }
 
   const textVariants = {
     hidden: { opacity: 0, x: 100 },
@@ -62,14 +56,18 @@ const FeaturesSection = () => {
       x: 0,
       transition: { duration: 0.8, ease: "easeOut" },
     },
-  };
+  }
 
   return (
     <section className="bg-gray-50 py-12">
       {/* Section Header */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
         <div className="flex items-center">
-          <img src={tiny_logo} alt="Logo" className="h-8 w-8 mr-2" />
+          <img
+            src="/images/tiny_logo.png"
+            alt="Logo"
+            className="h-8 w-8 mr-2"
+          />
           <h2 className="text-xl font-semibold uppercase">SuiMail Features</h2>
         </div>
       </div>
@@ -121,7 +119,7 @@ const FeaturesSection = () => {
                   } inline-flex p-3 rounded-full`}
                 >
                   <img
-                    src={tiny_logo}
+                    src={"/images/tiny_logo.png"}
                     alt={`${icons.imageSrc} icon`}
                     className="h-6 w-6"
                   />
@@ -132,7 +130,7 @@ const FeaturesSection = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default FeaturesSection;
+export default FeaturesSection

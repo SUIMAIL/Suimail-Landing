@@ -2,34 +2,26 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import tiny_logo from "../assets/tiny_logo.png"
-import suimail_logo from "../assets/suimail-logo.png"
-import Sui_guard from "../assets/Sui_guard.png"
 
 // Import the images for the features row
-import shieldIcon from "../assets/send.png"
-import lockIcon from "../assets/padlock.png"
-import paperPlaneIcon from "../assets/Sui.png"
-import userIcon from "../assets/tiny_logo.png"
-import dropletIcon from "../assets/Group.png"
 
 // Define icons for the infinite scrolling row
 const icons = [
-  { name: "shield", path: shieldIcon },
-  { name: "lock", path: lockIcon },
-  { name: "paper-plane", path: paperPlaneIcon },
-  { name: "user", path: userIcon },
-  { name: "droplet", path: dropletIcon },
-  { name: "shield", path: shieldIcon },
-  { name: "lock", path: lockIcon },
+  { name: "shield", path: "/images/send.png" },
+  { name: "lock", path: "/images/padlock.png" },
+  { name: "paper-plane", path: "/images/Sui.png" },
+  { name: "user", path: "/images/tiny_logo.png" },
+  { name: "droplet", path: "/images/Group.png" },
+  { name: "shield", path: "/images/send.png" },
+  { name: "lock", path: "/images/padlock.png" },
   // Additional repeats for smoother scrolling
-  { name: "shield", path: shieldIcon },
-  { name: "lock", path: lockIcon },
-  { name: "paper-plane", path: paperPlaneIcon },
-  { name: "user", path: userIcon },
-  { name: "droplet", path: dropletIcon },
-  { name: "shield", path: shieldIcon },
-  { name: "lock", path: lockIcon },
+  { name: "shield", path: "/images/send.png" },
+  { name: "lock", path: "/images/padlock.png" },
+  { name: "paper-plane", path: "/images/Sui.png" },
+  { name: "user", path: "/images/tiny_logo.png" },
+  { name: "droplet", path: "/images/Group.png" },
+  { name: "shield", path: "/images/send.png" },
+  { name: "lock", path: "/images/padlock.png" },
 ]
 
 const HeroSection = () => {
@@ -179,7 +171,10 @@ const HeroSection = () => {
               animate="visible"
               transition={{ delay: i * 0.05 }}
             >
-              <svg viewBox="0 0 100 100" className="w-full h-full fill-blue-400 opacity-20">
+              <svg
+                viewBox="0 0 100 100"
+                className="w-full h-full fill-blue-400 opacity-20"
+              >
                 <polygon points="50 0, 93.3 25, 93.3 75, 50 100, 6.7 75, 6.7 25" />
               </svg>
             </motion.div>
@@ -190,7 +185,14 @@ const HeroSection = () => {
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <pattern id="circuit" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+              <pattern
+                id="circuit"
+                x="0"
+                y="0"
+                width="100"
+                height="100"
+                patternUnits="userSpaceOnUse"
+              >
                 <path
                   d="M0 50 H100 M50 0 V100 M25 25 L75 75 M75 25 L25 75"
                   stroke="#3B82F6"
@@ -237,7 +239,11 @@ const HeroSection = () => {
         animate="visible"
       >
         <div className="flex items-center">
-          <img src={tiny_logo || "/placeholder.svg"} alt="Logo" className="h-8 w-8 mr-2" />
+          <img
+            src={"/images/tiny_logo.png"}
+            alt="Logo"
+            className="h-8 w-8 mr-2"
+          />
         </div>
 
         {/* Hamburger Menu Button */}
@@ -254,7 +260,12 @@ const HeroSection = () => {
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           ) : (
             <svg
@@ -264,7 +275,12 @@ const HeroSection = () => {
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           )}
         </button>
@@ -293,9 +309,16 @@ const HeroSection = () => {
           className="hidden md:flex items-center px-5 py-2.5 font-karla bg-gradient-to-r from-blue-500 to-blue-400 text-white rounded-lg shadow-lg"
           variants={buttonHoverVariants}
           whileHover="hover"
-          onClick={() => (window.location.href = "https://suimail-frontend.vercel.app/")}
+          onClick={() =>
+            (window.location.href = "https://suimail-frontend.vercel.app/")
+          }
         >
-          <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            className="w-5 h-5 mr-2"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
               d="M19 7H5C3.89543 7 3 7.89543 3 9V18C3 19.1046 3.89543 20 5 20H19C20.1046 20 21 19.1046 21 18V9C21 7.89543 20.1046 7 19 7Z"
               stroke="currentColor"
@@ -317,7 +340,9 @@ const HeroSection = () => {
 
       {/* Mobile Menu - Slide Down */}
       <motion.div
-        className={`relative z-10 w-full bg-white shadow-lg md:hidden overflow-hidden ${isMenuOpen ? "block" : "hidden"}`}
+        className={`relative z-10 w-full bg-white shadow-lg md:hidden overflow-hidden ${
+          isMenuOpen ? "block" : "hidden"
+        }`}
         initial={{ height: 0, opacity: 0 }}
         animate={{
           height: isMenuOpen ? "auto" : 0,
@@ -326,13 +351,22 @@ const HeroSection = () => {
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
         <div className="py-4 px-6 space-y-4">
-          <a href="#" className="block py-2 text-gray-700 hover:text-blue-500 font-karla transition-colors">
+          <a
+            href="#"
+            className="block py-2 text-gray-700 hover:text-blue-500 font-karla transition-colors"
+          >
             Home
           </a>
-          <a href="#" className="block py-2 text-gray-700 hover:text-blue-500 font-karla transition-colors">
+          <a
+            href="#"
+            className="block py-2 text-gray-700 hover:text-blue-500 font-karla transition-colors"
+          >
             About Us
           </a>
-          <a href="#" className="block py-2 text-gray-700 hover:text-blue-500 font-karla transition-colors">
+          <a
+            href="#"
+            className="block py-2 text-gray-700 hover:text-blue-500 font-karla transition-colors"
+          >
             Contact Us
           </a>
 
@@ -340,9 +374,16 @@ const HeroSection = () => {
             className="w-full flex items-center justify-center px-5 py-2.5 mt-4 font-karla bg-gradient-to-r from-blue-500 to-blue-400 text-white rounded-lg shadow-md"
             variants={buttonHoverVariants}
             whileTap={{ scale: 0.95 }}
-            onClick={() => (window.location.href = "https://suimail-frontend.vercel.app/")}
+            onClick={() =>
+              (window.location.href = "https://suimail-frontend.vercel.app/")
+            }
           >
-            <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              className="w-5 h-5 mr-2"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M19 7H5C3.89543 7 3 7.89543 3 9V18C3 19.1046 3.89543 20 5 20H19C20.1046 20 21 19.1046 21 18V9C21 7.89543 20.1046 7 19 7Z"
                 stroke="currentColor"
@@ -373,24 +414,37 @@ const HeroSection = () => {
         {/* Left Column */}
         <div className="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left">
           <motion.div variants={fadeInUpVariants}>
-            <img src={suimail_logo || "/placeholder.svg"} alt="Logo" className="mx-auto md:mx-0 h-12 md:h-16" />
+            <img
+              src={"/images/suimail-logo.png"}
+              alt="Logo"
+              className="mx-auto md:mx-0 h-12 md:h-16"
+            />
           </motion.div>
 
           <motion.h1
             variants={fadeInUpVariants}
             className="mt-4 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-900 font-coolvetica leading-tight"
           >
-            Own Your Inbox. <br/>Monetize Your Attention
+            Own Your Inbox. <br />
+            Monetize Your Attention
             <br />
-           
           </motion.h1>
 
-          <motion.p variants={fadeInUpVariants} className="mt-4 text-gray-600 font-karla max-w-lg mx-auto md:mx-0">
-             Decentralized Mailing that empowers you to take control of your inbox.<br/>No more spam. No more bots.
+          <motion.p
+            variants={fadeInUpVariants}
+            className="mt-4 text-gray-600 font-karla max-w-lg mx-auto md:mx-0"
+          >
+            Decentralized Mailing that empowers you to take control of your
+            inbox.
+            <br />
+            No more spam. No more bots.
           </motion.p>
 
           {/* Web3 Feature Pills - Enhanced */}
-          <motion.div variants={fadeInUpVariants} className="mt-6 flex flex-wrap justify-center md:justify-start gap-2">
+          <motion.div
+            variants={fadeInUpVariants}
+            className="mt-6 flex flex-wrap justify-center md:justify-start gap-2"
+          >
             <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
               <span className="w-2 h-2 rounded-full bg-blue-500 mr-1"></span>
               Decentralized
@@ -413,9 +467,16 @@ const HeroSection = () => {
               className="px-6 py-3 font-karla bg-gradient-to-r from-blue-500 to-blue-400 text-white rounded-lg shadow-lg flex items-center justify-center"
               variants={buttonHoverVariants}
               whileHover="hover"
-              onClick={() => (window.location.href = "https://suimail-frontend.vercel.app/")}
+              onClick={() =>
+                (window.location.href = "https://suimail-frontend.vercel.app/")
+              }
             >
-              <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                className="w-5 h-5 mr-2"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M19 7H5C3.89543 7 3 7.89543 3 9V18C3 19.1046 3.89543 20 5 20H19C20.1046 20 21 19.1046 21 18V9C21 7.89543 20.1046 7 19 7Z"
                   stroke="currentColor"
@@ -439,7 +500,12 @@ const HeroSection = () => {
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
             >
-              <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                className="w-5 h-5 mr-2"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M9 18L15 12L9 6"
                   stroke="currentColor"
@@ -483,19 +549,27 @@ const HeroSection = () => {
             <motion.div
               className="absolute -top-4 -left-4 w-8 h-8 border-t-2 border-l-2 border-blue-400 opacity-70"
               animate={{ rotate: [0, 90, 180, 270, 360], scale: [1, 1.1, 1] }}
-              transition={{ duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+              transition={{
+                duration: 10,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "linear",
+              }}
             />
             <motion.div
               className="absolute -bottom-4 -right-4 w-8 h-8 border-b-2 border-r-2 border-blue-400 opacity-70"
               animate={{ rotate: [360, 270, 180, 90, 0], scale: [1, 1.1, 1] }}
-              transition={{ duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+              transition={{
+                duration: 10,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "linear",
+              }}
             />
 
             {/* Main image with enhanced glow effect */}
             <div className="relative">
               <div className="absolute inset-0 bg-blue-400 rounded-full filter blur-3xl opacity-20 transform scale-75" />
               <img
-                src={Sui_guard || "/placeholder.svg"}
+                src={"/images/Sui_guard.png"}
                 alt="Secure Email Illustration"
                 className="relative z-10 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto"
               />
@@ -515,7 +589,12 @@ const HeroSection = () => {
                 ease: "easeInOut",
               }}
             >
-              <svg className="w-6 h-6 text-blue-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                className="w-6 h-6 text-blue-500"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
                   stroke="currentColor"
@@ -554,7 +633,12 @@ const HeroSection = () => {
                 delay: 1,
               }}
             >
-              <svg className="w-6 h-6 text-blue-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                className="w-6 h-6 text-blue-500"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M22 11.0799V11.9999C21.9988 14.1563 21.3005 16.2545 20.0093 17.9817C18.7182 19.7088 16.9033 20.9723 14.8354 21.5838C12.7674 22.1952 10.5573 22.1218 8.53447 21.3744C6.51168 20.6271 4.78465 19.246 3.61096 17.4369C2.43727 15.6279 1.87979 13.4879 2.02168 11.3362C2.16356 9.18443 2.99721 7.13619 4.39828 5.49694C5.79935 3.85768 7.69279 2.71525 9.79619 2.24001C11.8996 1.76477 14.1003 1.9822 16.07 2.85986"
                   stroke="currentColor"
@@ -578,8 +662,8 @@ const HeroSection = () => {
       {/* Features Row - Infinite Scrolling */}
       <div className="relative z-10 bg-white py-8 overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-16 mb-4">
-          <p className="text-center text-sm text-gray-500 font-karla mb-6">
-            Powered by cutting-edge blockchain technology
+          <p className="text-center text-2xl font-medium text-black font-karla mb-6">
+            Powered by Sui On Campus
           </p>
         </div>
 
@@ -592,7 +676,11 @@ const HeroSection = () => {
           >
             {icons.concat(icons).map((icon, idx) => (
               <div key={idx} className="flex-shrink-0 p-2 bg-black rounded-md">
-                <img src={icon.path} alt={`${icon.name} icon`} className="h-6 w-6 text-white" />
+                <img
+                  src={icon.path}
+                  alt={`${icon.name} icon`}
+                  className="h-6 w-6 text-white"
+                />
               </div>
             ))}
           </motion.div>
@@ -633,9 +721,13 @@ const HeroSection = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-sm font-medium text-gray-900">Blockchain</h3>
+                <h3 className="text-sm font-medium text-gray-900">
+                  Blockchain
+                </h3>
               </div>
-              <p className="text-xs text-gray-600">Secured by Sui blockchain technology</p>
+              <p className="text-xs text-gray-600">
+                Secured by Sui blockchain technology
+              </p>
             </div>
 
             <div className="bg-blue-50 p-4 rounded-lg border border-blue-100">
@@ -676,7 +768,9 @@ const HeroSection = () => {
                 </div>
                 <h3 className="text-sm font-medium text-gray-900">Encrypted</h3>
               </div>
-              <p className="text-xs text-gray-600">End-to-end encryption for your privacy</p>
+              <p className="text-xs text-gray-600">
+                End-to-end encryption for your privacy
+              </p>
             </div>
 
             <div className="bg-blue-50 p-4 rounded-lg border border-blue-100">
@@ -713,7 +807,9 @@ const HeroSection = () => {
                 </div>
                 <h3 className="text-sm font-medium text-gray-900">Ownership</h3>
               </div>
-              <p className="text-xs text-gray-600">You own your data, not corporations</p>
+              <p className="text-xs text-gray-600">
+                You own your data, not corporations
+              </p>
             </div>
 
             <div className="bg-blue-50 p-4 rounded-lg border border-blue-100">
@@ -748,9 +844,13 @@ const HeroSection = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-sm font-medium text-gray-900">NFT Support</h3>
+                <h3 className="text-sm font-medium text-gray-900">
+                  NFT Support
+                </h3>
               </div>
-              <p className="text-xs text-gray-600">Send NFTs directly through email</p>
+              <p className="text-xs text-gray-600">
+                Send NFTs directly through email
+              </p>
             </div>
           </div>
         </div>

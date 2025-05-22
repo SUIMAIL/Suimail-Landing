@@ -1,41 +1,78 @@
-import "react";
-import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter, FaInstagram } from "react-icons/fa6";
-
-import Zid from "../assets/Zid.png";
-import Abdol from "../assets/Abdol.png";
-import Sarah from "../assets/Sarah.png";
-import waliyy from "../assets/Waliy.png";
-import Sofiya from "../assets/Sofiya.png";
-import Prime from "../assets/Prime.png";
-import Joel from "../assets/Joel.png";
-import Evangel from "../assets/Evangel.png";
-import Dean from "../assets/Dean.jpg";
-import suimail_logo from "../assets/suimail-logo.png"
-import big from "../assets/4XL.png";
+import "react"
+import { motion } from "framer-motion"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { FaXTwitter, FaInstagram } from "react-icons/fa6"
 
 const teamMembers = [
-  { name: "AbdulWahab Salisu ", role: "Team Lead", image: Zid, twitter: "Z1d_exe" },
-  { name: "Oladipo Evangel", role: "Tech Lead", image: Evangel, twitter: "OladipoEvangel" },
-  { name: "Abdullahi Wahab", role: "FrontEnd Dev", image: Abdol, twitter: "Abdol164" },
-  { name: "Ukanah Dean", role: "BackEnd Dev", image: Dean, twitter: "OnesiUkanah" },
-  { name: "AbdulWaliyu Jamiu", role: "UI Ux Designer", image: waliyy, twitter: "InspectorPambs" },
-  { name: "Terawase Sarah", role: "Frontend/Blockchain", image: Sarah, twitter: "Sensationalsary" },
-  { name: "Joel Abundant", role: "Product Designer", image: Joel, twitter: "The_Kre8tive" },
-  { name: "Prime Solomon", role: "Graphics Designer", image: Prime, twitter: "GyangShom92128" },
-  { name: "Abdullahi Sofiyallahi", role: "Community Manager", image: Sofiya, twitter: "amonyweb3" },
-];
+  {
+    name: "AbdulWahab Salisu ",
+    role: "Team Lead",
+    image: "/images/Zid.png",
+    twitter: "Z1d_exe",
+  },
+  {
+    name: "Oladipo Evangel",
+    role: "Tech Lead",
+    image: "/images/Evangel.png",
+    twitter: "OladipoEvangel",
+  },
+  {
+    name: "Abdullahi Wahab",
+    role: "FrontEnd Dev",
+    image: "/images/Abdol.png",
+    twitter: "Abdol164",
+  },
+  {
+    name: "Ukanah Dean",
+    role: "BackEnd Dev",
+    image: "/images/Dean.jpg",
+    twitter: "OnesiUkanah",
+  },
+  {
+    name: "AbdulWaliyu Jamiu",
+    role: "UI Ux Designer",
+    image: "/images/Waliy.png",
+    twitter: "InspectorPambs",
+  },
+  {
+    name: "Terawase Sarah",
+    role: "Frontend/Blockchain",
+    image: "/images/Sarah.png",
+    twitter: "Sensationalsary",
+  },
+  {
+    name: "Joel Abundant",
+    role: "Product Designer",
+    image: "/images/Joel.png",
+    twitter: "The_Kre8tive",
+  },
+  {
+    name: "Prime Solomon",
+    role: "Graphics Designer",
+    image: "/images/Prime.png",
+    twitter: "GyangShom92128",
+  },
+  {
+    name: "Abdullahi Sofiyallahi",
+    role: "Community Manager",
+    image: "/images/Sofiya.png",
+    twitter: "amonyweb3",
+  },
+]
 
 const teamMemberVariants = {
   hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: "easeOut" } },
-};
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.5, ease: "easeOut" },
+  },
+}
 
 const footerVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
-};
+}
 
 export default function TeamPage() {
   return (
@@ -75,7 +112,7 @@ export default function TeamPage() {
       {/* Subscribe Section */}
       <section className="flex flex-col md:flex-row items-center justify-center gap-10 p-10 bg-white ">
         <motion.img
-          src={big}
+          src={"/images/4XL.png"}
           alt="Suimail Logo"
           className="w-100 h-32"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -92,7 +129,8 @@ export default function TeamPage() {
         >
           <h2 className="text-2xl font-semibold mb-2">Subscribe to Suimail</h2>
           <p className="mb-4 text-gray-600">
-            Stay updated with the latest features and updates from Suimail. Join our community and take your email experience to the next level.
+            Stay updated with the latest features and updates from Suimail. Join
+            our community and take your email experience to the next level.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
@@ -114,19 +152,34 @@ export default function TeamPage() {
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="max-w-6xl mx-auto p-8 flex flex-col md:flex-row justify-between items-center">
-                    <img src={suimail_logo || "/placeholder.svg"} alt="Logo" className="mx-auto md:mx-0 h-12 md:h-16" />
+          <img
+            src={"/images/suimail-logo.png"}
+            alt="Logo"
+            className="mx-auto md:mx-0 h-12 md:h-16"
+          />
 
           <div className="flex flex-col md:flex-row gap-4 text-sm text-gray-600 mt-4 md:mt-0">
             <div>
               <h3 className="font-semibold mb-1">Getting Started</h3>
-              <p>Learn more about Suimail and how it can transform your email experience.</p>
+              <p>
+                Learn more about Suimail and how it can transform your email
+                experience.
+              </p>
               <p>Contact our support team for any inquiries or assistance.</p>
-              <p>Find answers to common questions in our <a href="" className="text-blue-500"> FAQ</a> section.</p>
+              <p>
+                Find answers to common questions in our{" "}
+                <a href="" className="text-blue-500">
+                  {" "}
+                  FAQ
+                </a>{" "}
+                section.
+              </p>
             </div>
           </div>
         </div>
         <div className="mt-6 px-12 text-xs text-gray-500">
-          © 2025 SUIMAIL. All Rights Reserved. Empowering communication, one email at a time.
+          © 2025 SUIMAIL. All Rights Reserved. Empowering communication, one
+          email at a time.
         </div>
         <div className="flex justify-center mt-4 space-x-4">
           <a href="https://x.com/SUIMAIL_">
@@ -144,5 +197,5 @@ export default function TeamPage() {
         </div>
       </motion.footer>
     </div>
-  );
+  )
 }
