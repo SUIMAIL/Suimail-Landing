@@ -310,7 +310,7 @@ const HeroSection = () => {
           variants={buttonHoverVariants}
           whileHover="hover"
           onClick={() =>
-            (window.location.href = "https://suimail-frontend.vercel.app/")
+            (window.location.href = "https://suimail-fe-xyzapp.vercel.app")
           }
         >
           <svg
@@ -375,7 +375,7 @@ const HeroSection = () => {
             variants={buttonHoverVariants}
             whileTap={{ scale: 0.95 }}
             onClick={() =>
-              (window.location.href = "https://suimail-frontend.vercel.app/")
+              (window.location.href = "https://suimail-fe-xyzapp.vercel.app")
             }
           >
             <svg

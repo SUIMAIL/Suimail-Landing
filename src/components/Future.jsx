@@ -59,57 +59,72 @@ const HowItWorksAndFuturePlans = () => {
         <h2 className="text-3xl font-bold text-center mb-10">FUTURE PLANS</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {/* Card 1 */}
-          <div className="bg-white h-70 rounded-xl shadow p-6 text-center">
+          <div className="bg-white h-70 rounded-xl shadow p-6 flex flex-col transition hover:shadow-lg hover:-translate-y-1">
             <div className="mb-4">
               <img
-                src={"/images/Voice.png"}
+                src={"/images/male.jpg"}
                 alt="Video Call"
                 className="h-62 w-full object-cover rounded"
               />
             </div>
             <h3 className="font-semibold text-lg mb-2">
-              Voice and Video Call Features
+              Empower Your Organization
             </h3>
             <p className="text-sm text-gray-500">
-              Enable decentralized voice and video communication directly within
-              Suimail.
+             Private branded communication branded by blockchain
             </p>
+            <div className="flex justify-start mt-2">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                <span className="w-2 h-2 rounded-full bg-blue-500 mr-1"></span>
+                Explore enterprise suite
+              </span>
+            </div>
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white rounded-xl shadow p-8 text-center">
+          <div className="bg-white rounded-xl shadow p-8 flex flex-col transition hover:shadow-lg hover:-translate-y-1">
             <div className="mb-4">
               <div className="bg-gray-100 rounded h-70 flex items-center justify-center">
                 <img
-                  src={"/images/Ns.png"}
+                  src={"/images/small.jpg"}
                   alt="Video Call"
                   className="h-62 w-full object-cover rounded"
                 />
               </div>
             </div>
-            <h3 className="font-semibold text-lg mb-2">Integrating SUINs</h3>
+            <h3 className="font-semibold text-lg mb-2">Build Your Web3 Community</h3>
             <p className="text-sm text-gray-500">
-              Use Sui Name Service (SuiNS) for seamless email sending and
-              receiving.
+              Token Gated communication, events and secure collaboration
             </p>
+            <div className="flex justify-start mt-2">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                <span className="w-2 h-2 rounded-full bg-blue-500 mr-1"></span>
+                Start your Community
+              </span>
+            </div>
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white rounded-xl shadow p-6 text-center">
+          <div className="bg-white rounded-xl shadow p-6 flex flex-col transition hover:shadow-lg hover:-translate-y-1">
             <div className="mb-4">
               <div className="bg-gray-100 rounded h-70 flex items-center justify-center">
                 <img
-                  src={"/images/In-app.png"}
-                  alt="Video Call"
-                  className="h-62 w-full object-cover rounded"
+                  src={"/images/creator.png"}
+                  alt="creator"
+                  className="h-64 w-full object-cover rounded"
                 />
               </div>
             </div>
-            <h3 className="font-semibold text-lg mb-2">In-App Transactions</h3>
+            <h3 className="font-semibold text-lg">Tools For Web3 Creators</h3>
             <p className="text-sm text-gray-500">
-              Allow users to send and receive tokens directly within the Suimail
-              app.
+              Monetize Your Content, Reach Your Audience, own your Platform
             </p>
+            <div className="flex justify-start mt-2">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                <span className="w-2 h-2 rounded-full bg-blue-500 mr-1"></span>
+                Launch your Newsletter
+              </span>
+            </div>
           </div>
         </div>
       </div>
