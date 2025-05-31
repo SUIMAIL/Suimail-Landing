@@ -1,0 +1,7 @@
+{
+  "network": "testnet",
+  "owner": "0x5cfd801c6d4dc320fa6191cfcc2fd5464a3e6a636c5a4fc65c3852e64d37412e",
+  "site_name": "suimail-landing-test",
+  "epochs": 1,
+  "path": "./dist"
+}
