@@ -72,9 +72,9 @@ const HowItWorks = () => {
   ]
 
   return (
-    <div className="text-center mb-20">
-      <h2 className="text-3xl font-bold mb-10">How it works?</h2>
-      <div className="grid grid-cols-1 xl:grid-cols-3 justify-center items-center gap-10 md:gap-20">
+    <div className="mb-20">
+      <h2 className="text-3xl font-bold mb-10 text-center">How it works?</h2>
+      <div className="mt-20 grid grid-cols-1 lg:grid-cols-3 items-center justify-items-center gap-10 md:gap-20">
         {features.map((feature, index) => (
           <FeatureCard key={index} {...feature} />
         ))}
@@ -120,7 +120,7 @@ const FuturePlans = () => {
 
 const HowItWorksAndFuturePlans = () => {
   return (
-    <div className="bg-blue-50/50 px-6 py-16">
+    <div id="how-it-works" className="bg-blue-50/50 px-6 py-16">
       <HowItWorks />
       <FuturePlans />
     </div>

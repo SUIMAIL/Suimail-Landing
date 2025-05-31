@@ -60,7 +60,7 @@ const FeaturesSection = () => {
   }
 
   return (
-    <section className="bg-white">
+    <section id="features" className="bg-white">
       <div className="w-full pt-20 pb-0 flex items-center justify-center">
         <h2 className="text-3xl font-bold">Our Features</h2>
       </div>

@@ -76,7 +76,7 @@ const footerVariants = {
 
 export default function TeamPage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div id="team" className="flex flex-col min-h-screen">
       {/* Team Section */}
       <section className="bg-purple-700 py-16 text-white text-center">
         <h2 className="text-lg tracking-wide uppercase mb-2">Our Team</h2>
