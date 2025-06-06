@@ -39,7 +39,7 @@ const Buttons = () => {
         variants={buttonHoverVariants(true)}
         whileHover="hover"
         onClick={() =>
-          (window.location.href = "https://suimail-frontend.vercel.app/")
+          (window.location.href = "https://suimail.vercel.app/")
         }
       >
         Connect Wallet
