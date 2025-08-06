@@ -1,0 +1,17 @@
+name: Deploy on Walrus Sites
+run-name: ${{ github.actor }} is testing the deployment
+
+on:
+  push:
+    branches: [main]    
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy on Walrus Sites
+        uses: zktx-io/walrus-sites-provenance@v0.5.0
+        env:
+          ED25519_PRIVATE_KEY: ${{ secrets.ED25519_PRIVATE_KEY }}
+        

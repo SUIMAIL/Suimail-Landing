@@ -1,0 +1,16 @@
+{
+  "network": "testnet",
+  "owner": "0x5cfd801c6d4dc320fa6191cfcc2fd5464a3e6a636c5a4fc65c3852e64d37412e",
+  "site_name": "suimail-landing-test",
+  "metadata": {
+    "link": "https://suimail.xyz",
+    "image_url": "https://suimail.xyz/logo.png",
+    "name": "Suimail",
+    "description": "Suimail is a decentralized email service built on the Walrus protocol.",
+    "project_url": "https://github.com/suimail/suimail-landing",
+    "creator": "Suimail"
+  },
+  "path": "./dist",
+  "epochs": 10,
+  "write_retry_limit": 3
+}
