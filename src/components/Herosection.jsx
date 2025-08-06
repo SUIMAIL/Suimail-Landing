@@ -499,6 +499,8 @@ const HeroSection = () => {
               className="px-6 py-3 border border-blue-500 text-blue-600 rounded-lg font-karla hover:bg-blue-50 flex items-center justify-center"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
+                onClick={() => window.location.href = "/whitepaper"}
+
             >
               <svg
                 className="w-5 h-5 mr-2"

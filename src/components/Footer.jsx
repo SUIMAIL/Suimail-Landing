@@ -1,6 +1,6 @@
 import "react"
 import { motion } from "framer-motion"
-import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { FaTelegramPlane, FaLinkedin } from "react-icons/fa"
 import { FaXTwitter, FaInstagram } from "react-icons/fa6"
 
 const teamMembers = [
@@ -185,8 +185,8 @@ export default function TeamPage() {
           <a href="https://x.com/SUIMAIL_">
             <FaXTwitter className="text-blue-400" />
           </a>
-          <a href="https://github.com/SUIMAIL">
-            <FaGithub className="text-gray-800" />
+          <a href="https://t.me/suimailofficial">
+            <FaTelegramPlane className="text-blue-500" />
           </a>
           <a href="https://www.linkedin.com/company/suimail/">
             <FaLinkedin className="text-blue-700" />
