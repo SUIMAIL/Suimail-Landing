@@ -96,6 +96,85 @@ const HeroSection = () => {
             </span>
           </motion.div>
 
+          <motion.div
+            variants={fadeInUpVariants}
+            className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start space-y-3 sm:space-y-0 sm:space-x-4"
+          >
+            <motion.button
+              className="px-6 py-3 font-karla bg-gradient-to-r from-blue-500 to-blue-400 text-white rounded-lg shadow-lg flex items-center justify-center"
+              variants={buttonHoverVariants}
+              whileHover="hover"
+              onClick={() =>
+                (window.location.href = "https://suimail-frontend.vercel.app/")
+              }
+            >
+              <svg
+                className="w-5 h-5 mr-2"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 7H5C3.89543 7 3 7.89543 3 9V18C3 19.1046 3.89543 20 5 20H19C20.1046 20 21 19.1046 21 18V9C21 7.89543 20.1046 7 19 7Z"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M16 20V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V20"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              Connect Wallet
+            </motion.button>
+
+            <motion.button
+              className="px-6 py-3 border border-blue-500 text-blue-600 rounded-lg font-karla hover:bg-blue-50 flex items-center justify-center"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
+                onClick={() => window.location.href = "/whitepaper"}
+
+            >
+              <svg
+                className="w-5 h-5 mr-2"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 18L15 12L9 6"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              Learn more
+            </motion.button>
+          </motion.div>
+
+          {/* Blockchain Stats - Enhanced */}
+          <motion.div
+            variants={fadeInUpVariants}
+            className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-md mx-auto md:mx-0"
+          >
+            <div className="text-center p-2 rounded-lg bg-white bg-opacity-70 backdrop-blur-sm shadow-sm border border-blue-100">
+              <p className="text-blue-500 font-bold text-xl">100%</p>
+              <p className="text-xs text-gray-600">Decentralized</p>
+            </div>
+            <div className="text-center p-2 rounded-lg bg-white bg-opacity-70 backdrop-blur-sm shadow-sm border border-blue-100">
+              <p className="text-blue-500 font-bold text-xl">256-bit</p>
+              <p className="text-xs text-gray-600">Encryption</p>
+            </div>
+            <div className="text-center p-2 rounded-lg bg-white bg-opacity-70 backdrop-blur-sm shadow-sm border border-blue-100 col-span-2 sm:col-span-1">
+              <p className="text-blue-500 font-bold text-xl">Sui</p>
+              <p className="text-xs text-gray-600">Blockchain</p>
+            </div>
+          </motion.div>
           <Buttons />
           <Stats />
         </div>
